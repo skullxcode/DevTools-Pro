@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHelper Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>DevHelper Pro</div>
+    </header>
+    <main>
+        <label for="app-selector">Choose the type of Converter</label>
+        <br>
+        <select name="Choose Converter" id="app-selector">
+            <option value="" disabled selected>Select Converter</option>
+            <option value="px-rem">REM ⇄ PX Converter</option>
+            <option value="base-conv">Decimal ⇄ Binary Converter</option>
+            <option value="hex-rgb">HEX ⇄ RGB Converter</option>
+        </select>
+        <div id="main-box">
+            <div id="px-rem-converter" class="app-card">
+                <div id="card-heading">REM ⇄ PX Converter</div>
+                <input type="text" id="px-value" placeholder="PX Value" class="input-field">
+                <div class="icon-swap"></div>
+                <input type="text" id="rem-value" placeholder="REM Value" class="input-field">
+            </div>
+
+            <div id="base-converter" class="app-card">
+                <div id="card-heading">Decimal ⇄ Binary Converter</div>
+                <input type="text" id="dec-value" placeholder="Decimal Value" class="input-field">
+                <div class="icon-swap"></div>
+                <input type="text" id="bin-value" placeholder="Binary Value" class="input-field">
+            </div>
+
+            <div id="hex-rgb-converter" class="app-card">
+                <div id="card-heading">HEX ⇄ RGB Converter</div>
+                <input type="text" id="hex-value" placeholder="HEX Value" class="input-field">
+                <div class="icon-swap"></div>
+                <input type="text" id="rgb-value" placeholder="RGB Value" class="input-field">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+    <div class="footer-content">
+        <p>Built by skullxcode</p>
+        <div class="footer-links">
+            <a href="https://github.com/skullxcode" target="_blank">GitHub</a>
+            <span class="separator">|</span>
+            <a href="https://linkedin.com/in/ujjwal-jain-" target="_blank">LinkedIn</a>
+        </div>
+        <p class="copyright">&copy; 2026 DevHelper Pro</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

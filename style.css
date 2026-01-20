@@ -1,0 +1,191 @@
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Section */
+
+header {
+    position: absolute;
+    top: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #38bdf8;
+}
+
+/* Main Section */
+
+main {
+    background-color: #1e293b;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #334155;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#main-box {
+    width: 100%;
+}
+
+#px-rem-converter, 
+#base-converter, 
+#hex-rgb-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+}
+
+#main-box img {
+    display: block;
+    margin: 5px auto;
+    width: 24px;
+    height: 24px;
+}
+
+#card-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #38bdf8;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+#app-selector {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #334155;
+    border: 1px solid #475569;
+    color: white;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+#app-selector:focus {
+    border-color: #38bdf8;
+}
+
+
+#main-box > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#card-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #f1f5f9;
+}
+
+
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background-color: #0f172a;
+    color: #38bdf8;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+.icon-swap {
+    width: 24px;
+    height: 24px;
+    background-color: #38bdf8;
+    mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Im0yMSAxNi00IDQtNC00Ii8+PHBhdGggZD0iTTE3IDIwVjQiLz48cGF0aCBkPSJtMyA4IDQtNCA0IDgiLz48cGF0aCBkPSJNNyA0djE2Ii8+PC9zdmc+");
+    -webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Im0yMSAxNi00IDQtNC00Ii8+PHBhdGggZD0iTTE3IDIwVjQiLz48cGF0aCBkPSJtMyA4IDQtNCA0IDgiLz48cGF0aCBkPSJNNyA0djE2Ii8+PC9zdmc+");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+input:focus ~ .icon-swap {
+    transform: rotate(180deg);
+}
+
+/* Footer Section */
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #334155;
+    text-align: center;
+}
+
+.footer-content p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+.separator {
+    color: #475569;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-top: 5px;
+}
