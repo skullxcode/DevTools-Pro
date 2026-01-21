@@ -1,6 +1,6 @@
-# 🚀 DevUnit Pro: Multi-Purpose Developer Utility
+# 🚀 DevTools Pro: Multi-Purpose Developer Utility
 
-**DevUnit Pro** is a centralized hub for common developer conversions, focusing on mathematical accuracy, real-time data binding, and a professional user interface. Built as a Single Page Application (SPA), it allows users to switch between specialized tools seamlessly without page reloads.
+**DevTools Pro** is a centralized hub for common developer conversions, focusing on mathematical accuracy, real-time data binding, and a professional user interface. Built as a Single Page Application (SPA), it allows users to switch between specialized tools seamlessly without page reloads.
 
 ## 🛠 Features
 
